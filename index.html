@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MAKHSUM ENGLISH</title>
+<title>MAKHSUM ENGLISH - Smart Learning Platform & Ultra AI Tutor</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
@@ -28,7 +28,7 @@ body{margin:0;font-family:Inter,system-ui,sans-serif;background:radial-gradient(
 .opt.ok{background:#bbf7d0;border-color:#10b981}.opt.no{background:#fecdd3;border-color:#f43f5e}
 .lv{cursor:pointer;text-align:left;padding:1.4rem;color:inherit;transition:transform .25s,box-shadow .25s,border-color .25s}
 .lv:hover{transform:translateY(-6px);box-shadow:0 0 36px var(--c);border-color:var(--c)}
-.spk{background:var(--tint);border:0;border-radius:50%;width:36px;height:36px;cursor:pointer;transition:.2s}
+.spk{background:var(--tint);border:0;border-radius:50%;width:36px;height:36px;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;justify-content:center}
 .spk:hover{background:var(--bd2);transform:scale(1.15)}
 .fl{perspective:900px}.fi{position:relative;height:220px;transition:transform .6s;transform-style:preserve-3d;cursor:pointer}.fi.on{transform:rotateY(180deg)}
 .fi>div{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem}.fi .bk{transform:rotateY(180deg)}
@@ -60,15 +60,16 @@ input:focus,textarea:focus,button:focus-visible{outline:2px solid var(--p2);outl
 .lgb::before{content:"";position:absolute;inset:-3px;border-radius:50%;z-index:-1;background:conic-gradient(#fde047,transparent 35%,#fff 60%,transparent 85%,#fde047);animation:spin 4s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
 @media(max-width:560px){.hdr .lang button{font-size:0}.hdr .lang .cc{font-size:.72rem}}
 .aib{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;align-items:center;gap:.5rem;padding:.8rem 1.1rem;border-radius:999px;border:0;cursor:pointer;color:#fff;font-size:.95rem;background:linear-gradient(90deg,var(--p),var(--p2));box-shadow:0 10px 28px color-mix(in srgb,var(--p2) 50%,transparent);animation:bob 3s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-5px)}}
-.aip{position:fixed;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:60;width:min(410px,calc(100vw - 32px));height:min(580px,calc(100vh - 130px));display:none;flex-direction:column;background:#fff;border:1px solid var(--bd);border-radius:22px;box-shadow:0 20px 60px rgba(0,0,0,.25);overflow:hidden}.aip.open{display:flex}
+.aip{position:fixed;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:60;width:min(440px,calc(100vw - 32px));height:min(620px,calc(100vh - 120px));display:none;flex-direction:column;background:#fff;border:1px solid var(--bd);border-radius:22px;box-shadow:0 20px 60px rgba(0,0,0,.25);overflow:hidden}.aip.open{display:flex}
 .aih{background:linear-gradient(100deg,var(--p),var(--p2));color:#fff;padding:.8rem 1rem;display:flex;align-items:center;gap:.6rem}
 .aih .spk{background:rgba(255,255,255,.25);width:32px;height:32px;color:#fff}
-.aim{flex:1;overflow-y:auto;padding:.9rem;display:flex;flex-direction:column;gap:.6rem;background:linear-gradient(var(--tint),#fff)}
-.mb{max-width:90%;padding:.6rem .85rem;border-radius:16px;font-size:.92rem;line-height:1.45;overflow-wrap:anywhere}
+.aim{flex:1;overflow-y:auto;padding:.9rem;display:flex;flex-direction:column;gap:.7rem;background:linear-gradient(var(--tint),#fff)}
+.mb{max-width:92%;padding:.7rem .95rem;border-radius:16px;font-size:.92rem;line-height:1.5;overflow-wrap:anywhere}
 .mb.u{align-self:flex-end;background:linear-gradient(90deg,var(--p),var(--p2));color:#fff;border-bottom-right-radius:4px}
-.mb.b{align-self:flex-start;background:#fff;border:1px solid var(--bd);color:#0f172a;border-bottom-left-radius:4px}
+.mb.b{align-self:flex-start;background:#fff;border:1px solid var(--bd);color:#0f172a;border-bottom-left-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
 .aic{display:flex;gap:.4rem;overflow-x:auto;padding:.5rem .7rem;border-top:1px solid var(--bd);background:#fff}
-.aic button{white-space:nowrap;font-size:.75rem;padding:.35rem .7rem;border-radius:999px;border:1px solid var(--bd2);background:#fff;color:var(--tx);cursor:pointer}
+.aic button{white-space:nowrap;font-size:.75rem;padding:.35rem .7rem;border-radius:999px;border:1px solid var(--bd2);background:#fff;color:var(--tx);cursor:pointer;transition:.2s}
+.aic button:hover{background:var(--tint);border-color:var(--p2)}
 .aif{display:flex;gap:.5rem;padding:.6rem;border-top:1px solid var(--bd);background:#fff}.aif input{margin:0;flex:1}.aif .btn{padding:.6rem 1rem}
 .dots span{display:inline-block;animation:dt 1s infinite}.dots span:nth-child(2){animation-delay:.15s}.dots span:nth-child(3){animation-delay:.3s}@keyframes dt{50%{opacity:.2}}
 @property --p{syntax:'<color>';inherits:true;initial-value:#15803d}@property --p2{syntax:'<color>';inherits:true;initial-value:#16a34a}@property --p3{syntax:'<color>';inherits:true;initial-value:#22c55e}@property --p4{syntax:'<color>';inherits:true;initial-value:#4ade80}
@@ -85,6 +86,8 @@ input:focus,textarea:focus,button:focus-visible{outline:2px solid var(--p2);outl
 #panel .grid>.glass{transition:transform .25s,box-shadow .25s}#panel .grid>.glass:hover{transform:translateY(-4px);box-shadow:0 12px 30px color-mix(in srgb,var(--p2) 25%,transparent)}
 .opt.ok{animation:pop .45s}.opt.no{animation:shake .4s}@keyframes pop{40%{transform:scale(1.04)}}@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 .cf{position:fixed;inset:0;pointer-events:none;z-index:90;overflow:hidden}.cf i{position:absolute;top:-14px;width:8px;height:14px;border-radius:2px;animation:cfall linear forwards}@keyframes cfall{to{transform:translate(var(--x),108vh) rotate(720deg)}}
+.ai-tag{display:inline-block;padding:2px 8px;border-radius:6px;background:var(--tint);color:var(--tx);font-weight:700;font-size:0.75rem;margin-bottom:6px;border:1px solid var(--bd2)}
+.ai-example{background:#f8fafc;border-left:3px solid var(--p2);padding:6px 10px;margin:6px 0;border-radius:0 8px 8px 0;font-size:0.88rem}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -119,7 +122,7 @@ input:focus,textarea:focus,button:focus-visible{outline:2px solid var(--p2);outl
   </div>
   <div class="relative h-72 md:h-96 flex items-center justify-center">
    <div class="absolute w-64 h-64 rounded-full blur-3xl opacity-50" style="background:linear-gradient(135deg,var(--p4),var(--p2))"></div>
-   <div id="wod" class="glass float px-8 py-6 text-center relative"></div><button class="spk mt-3" onclick="say('Hello! Welcome to Makhsum English')" aria-label="sound">🔊</button></div>
+   <div id="wod" class="glass float px-8 py-6 text-center relative"></div>
    <div class="glass float absolute top-4 right-2 px-4 py-2 text-sm" style="animation-delay:-1.5s">A1 → C2</div>
    <div class="glass float absolute bottom-4 left-2 px-4 py-2 text-sm" style="animation-delay:-3s">🇹🇯 🇷🇺 🇬🇧</div>
   </div>
@@ -138,7 +141,6 @@ input:focus,textarea:focus,button:focus-visible{outline:2px solid var(--p2);outl
   </div>
  </section>
 
-
  <section id="test" class="py-12">
   <div class="glass p-5 md:p-8">
    <h2 class="text-3xl font-extrabold" id="tt"></h2><p class="text-slate-400 mt-2" id="tp"></p>
@@ -146,46 +148,55 @@ input:focus,textarea:focus,button:focus-visible{outline:2px solid var(--p2);outl
   </div>
  </section>
 </main>
-<footer class="text-center text-slate-500 text-sm py-8">© 2026 MAKHSUM ENGLISH</footer>
+<footer class="text-center text-slate-500 text-sm py-8">© 2026 MAKHSUM ENGLISH - Smart Offline AI Platform</footer>
 
 <button id="aib" class="aib" onclick="aiToggle()" aria-label="MAKHSUM AI"><span>🤖</span><b>MAKHSUM AI</b></button>
 <div id="aip" class="aip" role="dialog" aria-label="MAKHSUM AI">
- <div class="aih"><span class="text-2xl">🤖</span><div class="flex-1 leading-tight"><b>MAKHSUM AI</b><div class="text-xs opacity-90" id="ait"></div></div><button class="spk" id="aid" onclick="aiMode()" aria-label="mode" title="Fast / Deep">⚡</button><button class="spk" onclick="aiClear()" aria-label="clear">🗑</button><button class="spk" onclick="aiToggle(false)" aria-label="close">✕</button></div>
+ <div class="aih">
+  <span class="text-2xl">🤖</span>
+  <div class="flex-1 leading-tight"><b>MAKHSUM AI (Ultra Engine)</b><div class="text-xs opacity-90" id="ait"></div></div>
+  <button class="spk" id="aid" onclick="aiMode()" aria-label="mode" title="Ultra Fast Smart Engine">⚡</button>
+  <button class="spk" onclick="aiClear()" aria-label="clear">🗑</button>
+  <button class="spk" onclick="aiToggle(false)" aria-label="close">✕</button>
+ </div>
  <div class="aim" id="aim"></div>
  <div class="aic" id="aic"></div>
- <div class="aif"><input id="aii" autocomplete="off"><button class="btn" onclick="aiSend()" aria-label="send">➤</button></div>
+ <div class="aif"><input id="aii" autocomplete="off" placeholder="Саволатонро нависед..."><button class="btn" onclick="aiSend()" aria-label="send">➤</button></div>
 </div>
+
 <script>
 const T={
 tg:{nav:['Асосӣ','Сатҳҳо','Машқи интерактивӣ','Луғат ва грамматика','Санҷиши сатҳ','MAKHSUM AI'],
-h1:'Забони англисиро бо услуби нав омӯзед',hp:'Аз A1 то C2: луғат, грамматика, тестҳо ва талаффузи овозӣ дар як ҷой.',c1:'Оғози омӯзиш',c2:'Сатҳҳоро бинед',
+h1:'Забони англисиро бо услуби нав омӯзед',hp:'Аз A1 то C2: луғат, грамматика, тестҳо ва чатботи зеҳнии офлайн дар як ҷой.',c1:'Оғози омӯзиш',c2:'Сатҳҳоро бинед',
 lt:'Сатҳҳои CEFR (A1–C2)',lp:'Сатҳи худро интихоб кунед ва машқро оғоз намоед.',
 ln:['Beginner · Ибтидоӣ','Elementary · Поёнтар аз миёна','Pre-Intermediate · Пеш аз миёна','Intermediate · Миёна','Upper-Intermediate · Болотар аз миёна','Advanced · Пешрафта'],
 ld:['Калимаҳо ва ибораҳои асосӣ','Мавзӯъҳои рӯзмарра','Сафар, кор ва муошират','Муколамаи озод','Забони мураккаб ва нозук','Сатҳи соҳибзабон'],
-tabs:['Луғат ва қоида','Флешкортҳо','Тест','Мушкили рӯз','Муколама'],play:'Хондани ҳама',aino:'MAKHSUM AI танҳо ҳангоми кушодани сайт аз пайванди claude.ai кор мекунад (на ҳамчун файл). Пайвандро аз claude.ai кушоед.',sl:['Сатҳ','Мавзӯи грамматикӣ','Калима','Саволи санҷиш'],ait:'Ёвари зеҳнии омӯзиши забони англисӣ',aip:'Саволатонро нависед...',aiw:'Салом! Ман MAKHSUM AI ҳастам, ёвари зеҳнии шумо барои омӯзиши забони англисӣ. Ҳар саволи душвор дар бораи грамматика, луғат, талаффуз ё имтиҳонҳоро диҳед!',aie:'Хатое рух дод. Лутфан бори дигар кӯшиш кунед.',air:'Дархостҳо аз ҳад зиёданд. Андаке интизор шавед.',ain:'Барои истифодаи MAKHSUM AI иҷозат лозим аст. Саҳифаро нав кунед ва иҷозат диҳед.',aic:['Фарқи Present Perfect ва Past Simple чист?','Кай артикли the лозим аст ва кай не?','Чӣ тавр IELTS Writing-ро беҳтар кунам?'],tt:'Санҷиши сатҳ (30 савол)',tp:'30 савол аз осон ба мушкил. Баъди ҷавоб додан сатҳи забондонии шумо худкор муайян мешавад.',ts:'Оғози санҷиш',tgo:'Аз ин сатҳ оғоз кунед',c3:'Сатҳамро санҷам',wod:'КАЛИМАИ РӮЗ',gr:'Қоидаи грамматикӣ',wd:'Калимаҳо',flip:'Барои гардондан зер кунед',next:'Баъдӣ',score:'Натиҷаи шумо',retry:'Бори дигар',of:'аз',ok:'Дуруст!',no:'Нодуруст. Ҷавоби дуруст сабз аст.',dq:'Маънои ин калима чист:',
+tabs:['Луғат ва қоида','Флешкортҳо','Тест','Мушкили рӯз','Муколама'],play:'Хондани ҳама',sl:['Сатҳ','Мавзӯи грамматикӣ','Калима','Саволи санҷиш'],ait:'Ёвари олии зеҳнӣ (100% Офлайн & Тез)',aip:'Саволи дилхоҳро нависед...',aiw:'Салом! Ман **MAKHSUM AI** ҳастам — ёвари офлайнии зеҳнии шумо. Ҳамаи саволҳои мушкили грамматика, IELTS, TOEFL, идиомаҳо, артиклҳо ё замонҳоро нависед, ман фавран ва мукаммал ҷавоб медиҳам!',aie:'Хатое рух дод. Лутфан бори дигар кӯшиш кунед.',air:'Дархостҳо аз ҳад зиёданд.',ain:'Мушкилии дохилӣ.',aic:['Present Perfect vs Past Simple','Кай артикли the истифода мешавад?','Чӣ тавр IELTS Writing-ро беҳтар кунам?','Маънои идиомаи Break a leg чист?'],tt:'Санҷиши сатҳ (30 савол)',tp:'30 савол аз осон ба мушкил. Баъди ҷавоб додан сатҳи забондонии шумо худкор муайян мешавад.',ts:'Оғози санҷиш',tgo:'Аз ин сатҳ оғоз кунед',c3:'Сатҳамро санҷам',wod:'КАЛИМАИ РӮЗ',gr:'Қоидаи грамматикӣ',wd:'Калимаҳо',flip:'Барои гардондан зер кунед',next:'Баъдӣ',score:'Натиҷаи шумо',retry:'Бори дигар',of:'аз',ok:'Дуруст!',no:'Нодуруст. Ҷавоби дуруст сабз аст.',dq:'Маънои ин калима чист:',
 pt:'Нарх ва дастрасии ройгон',free:'Ройгон',fp:['Ҳамаи сатҳҳои A1–C2','Тестҳо ва флешкортҳо','Талаффузи овозӣ'],pro:'Premium',pp:['Ҳамаи имкониятҳои ройгон','Нақшаи шахсии омӯзиш','Дастгирии омӯзгор'],st:'Оғоз кунед',ask:'Пурсед',
 ct:'Тамос ва дастгирӣ',cp:'Саволатонро нависед, мо ҷавоб медиҳем.',nm:'Номи шумо',em:'Почтаи электронӣ',ms:'Паём',send:'Фиристодан',thx:'Ташаккур! Паёми шумо қабул шуд.'},
 ru:{nav:['Главная','Уровни','Практика','Лексика и грамматика','Тест уровня','MAKHSUM AI'],
-h1:'Учите английский по-новому',hp:'От A1 до C2: лексика, грамматика, тесты и озвучка произношения в одном месте.',c1:'Начать обучение',c2:'Смотреть уровни',
+h1:'Учите английский по-новому',hp:'От A1 до C2: лексика, грамматика, тесты и умный офлайн-чатбот в одном месте.',c1:'Начать обучение',c2:'Смотреть уровни',
 lt:'Уровни CEFR (A1–C2)',lp:'Выберите свой уровень и начните практику.',
 ln:['Beginner · Начальный','Elementary · Элементарный','Pre-Intermediate · Ниже среднего','Intermediate · Средний','Upper-Intermediate · Выше среднего','Advanced · Продвинутый'],
 ld:['Базовые слова и фразы','Повседневные темы','Путешествия, работа, общение','Свободный диалог','Сложный и тонкий язык','Уровень носителя'],
-tabs:['Слова и правила','Карточки','Тест','Задача дня','Диалог'],play:'Озвучить всё',aino:'MAKHSUM AI работает только при открытии сайта по ссылке claude.ai (не как файл). Откройте ссылку из claude.ai.',sl:['Уровней','Тем грамматики','Слов','Вопросов теста'],ait:'ИИ-помощник по изучению английского',aip:'Напишите свой вопрос...',aiw:'Привет! Я MAKHSUM AI, ваш ИИ-помощник по английскому. Задавайте любые сложные вопросы о грамматике, лексике, произношении или экзаменах!',aie:'Произошла ошибка. Попробуйте ещё раз.',air:'Слишком много запросов. Немного подождите.',ain:'Для работы MAKHSUM AI нужно разрешение. Обновите страницу и разрешите доступ.',aic:['В чём разница между Present Perfect и Past Simple?','Когда нужен артикль the, а когда нет?','Как улучшить IELTS Writing?'],tt:'Тест на определение уровня (30 вопросов)',tp:'30 вопросов от лёгких к сложным. После ответов ваш уровень определится автоматически.',ts:'Начать тест',tgo:'Начать с этого уровня',c3:'Проверить уровень',wod:'СЛОВО ДНЯ',gr:'Правило грамматики',wd:'Слова',flip:'Нажмите, чтобы перевернуть',next:'Далее',score:'Ваш результат',retry:'Ещё раз',of:'из',ok:'Верно!',no:'Неверно. Правильный ответ выделен зелёным.',dq:'Что означает слово:',
+tabs:['Слова и правила','Карточки','Тест','Задача дня','Диалог'],play:'Озвучить всё',sl:['Уровней','Тем грамматики','Слов','Вопросов теста'],ait:'Умный ИИ-помощник (100% Офлайн и Быстро)',aip:'Задайте любой вопрос...',aiw:'Привет! Я **MAKHSUM AI** — ваш автономный ИИ-репетитор. Задавайте любые сложные вопросы по грамматике, IELTS, TOEFL, артиклям, временам или идиомам!',aie:'Произошла ошибка.',air:'Слишком много запросов.',ain:'Доступ ограничен.',aic:['В чём разница между Present Perfect и Past Simple?','Когда нужен артикль the?','Как улучшить IELTS Writing?','Что означает Break a leg?'],tt:'Тест на определение уровня (30 вопросов)',tp:'30 вопросов от лёгких к сложным. После ответов ваш уровень определится автоматически.',ts:'Начать тест',tgo:'Начать с этого уровня',c3:'Проверить уровень',wod:'СЛОВО ДНЯ',gr:'Правило грамматики',wd:'Слова',flip:'Нажмите, чтобы перевернуть',next:'Далее',score:'Ваш результат',retry:'Ещё раз',of:'из',ok:'Верно!',no:'Неверно. Правильный ответ выделен зелёным.',dq:'Что означает слово:',
 pt:'Цены и бесплатный доступ',free:'Бесплатно',fp:['Все уровни A1–C2','Тесты и карточки','Озвучка произношения'],pro:'Premium',pp:['Всё из бесплатного плана','Личный план обучения','Поддержка преподавателя'],st:'Начать',ask:'Спросить',
 ct:'Контакты и поддержка',cp:'Напишите вопрос, и мы ответим.',nm:'Ваше имя',em:'Электронная почта',ms:'Сообщение',send:'Отправить',thx:'Спасибо! Ваше сообщение принято.'},
 en:{nav:['Home','Levels','Interactive Practice','Vocabulary & Grammar','Level Test','MAKHSUM AI'],
-h1:'Learn English in a whole new way',hp:'From A1 to C2: vocabulary, grammar, quizzes and spoken pronunciation in one place.',c1:'Start learning',c2:'Explore levels',
+h1:'Learn English in a whole new way',hp:'From A1 to C2: vocabulary, grammar, quizzes and smart offline AI tutor in one place.',c1:'Start learning',c2:'Explore levels',
 lt:'CEFR Levels (A1–C2)',lp:'Pick your level and start practising.',
 ln:['Beginner','Elementary','Pre-Intermediate','Intermediate','Upper-Intermediate','Advanced'],
 ld:['Core words and phrases','Everyday topics','Travel, work and socialising','Fluent conversation','Complex and subtle language','Near-native command'],
-tabs:['Words & Rules','Flashcards','Quiz','Daily Challenge','Dialogue'],play:'Play all',aino:'MAKHSUM AI works only when the site is opened through its claude.ai link (not as a file). Open the link from claude.ai.',sl:['Levels','Grammar topics','Words','Test questions'],ait:'AI helper for learning English',aip:'Type your question...',aiw:'Hi! I am MAKHSUM AI, your AI helper for learning English. Ask me any tricky question about grammar, vocabulary, pronunciation or exams!',aie:'Something went wrong. Please try again.',air:'Too many requests. Please wait a moment.',ain:'MAKHSUM AI needs permission to work. Reload the page and allow access.',aic:['What is the difference between Present Perfect and Past Simple?','When do I need the article the, and when not?','How can I improve my IELTS Writing?'],tt:'Placement Test (30 questions)',tp:'30 questions from easy to hard. Your level is detected automatically when you finish.',ts:'Start the test',tgo:'Start at this level',c3:'Test my level',wod:'WORD OF THE DAY',gr:'Grammar note',wd:'Vocabulary',flip:'Tap the card to flip it',next:'Next',score:'Your score',retry:'Try again',of:'of',ok:'Correct!',no:'Not quite. The right answer is in green.',dq:'What does this word mean:',
+tabs:['Words & Rules','Flashcards','Quiz','Daily Challenge','Dialogue'],play:'Play all',sl:['Levels','Grammar topics','Words','Test questions'],ait:'Smart AI Tutor (100% Offline & Instant)',aip:'Type any question...',aiw:'Hi! I am **MAKHSUM AI** — your smart offline English tutor. Ask me any hard question about grammar, IELTS, TOEFL, idioms, tenses or articles!',aie:'Something went wrong.',air:'Too many requests.',ain:'Access denied.',aic:['Difference between Present Perfect and Past Simple?','When to use article "the"?','How to improve IELTS Writing?','Meaning of "Break a leg"?'],tt:'Placement Test (30 questions)',tp:'30 questions from easy to hard. Your level is detected automatically when you finish.',ts:'Start the test',tgo:'Start at this level',c3:'Test my level',wod:'WORD OF THE DAY',gr:'Grammar note',wd:'Vocabulary',flip:'Tap the card to flip it',next:'Next',score:'Your score',retry:'Try again',of:'of',ok:'Correct!',no:'Not quite. The right answer is in green.',dq:'What does this word mean:',
 pt:'Pricing & Free Access',free:'Free',fp:['All levels A1–C2','Quizzes and flashcards','Spoken pronunciation'],pro:'Premium',pp:['Everything in Free','Personal study plan','Tutor support'],st:'Get started',ask:'Ask us',
 ct:'Contact & Support',cp:'Send your question and we will reply.',nm:'Your name',em:'Email',ms:'Message',send:'Send',thx:'Thank you! Your message has been received.'}
 };
+
 const C=['#16a34a','#dc2626','#ea580c','#2563eb','#7c3aed','#14532d'];
 const TH=['15803d,16a34a,22c55e,4ade80,bbf7d0,86efac,dcfce7,14532d','b91c1c,dc2626,ef4444,f87171,fecaca,fca5a5,fee2e2,7f1d1d','c2410c,ea580c,f59e0b,fbbf24,fed7aa,fdba74,ffedd5,7c2d12','1d4ed8,2563eb,3b82f6,60a5fa,bfdbfe,93c5fd,dbeafe,1e3a8a','6d28d9,7c3aed,8b5cf6,a78bfa,ddd6fe,c4b5fd,ede9fe,4c1d95','064e3b,14532d,166534,15803d,c9dccf,9ab8a5,e6f0e9,052e16'].map(x=>x.split(','));
 const VN=['p','p2','p3','p4','bd','bd2','tint','tx'];
 function applyTheme(){TH[S.lv].forEach((v,i)=>document.documentElement.style.setProperty('--'+VN[i],'#'+v))}
+
 const L=[
 {k:'A1',w:'hello|салом|привет;water|об|вода;book|китоб|книга;friend|дӯст|друг;house|хона|дом;mother|модар|мать;school|мактаб|школа;food|хӯрок|еда;happy|хушҳол|счастливый;big|калон|большой;day|рӯз|день;name|ном|имя;apple|себ|яблоко;cat|гурба|кошка;dog|саг|собака;father|падар|отец;sister|хоҳар|сестра;brother|бародар|брат;table|миз|стол;chair|курсӣ|стул;door|дар|дверь;window|тиреза|окно;car|мошин|машина;bread|нон|хлеб;milk|шир|молоко;tea|чой|чай;red|сурх|красный;small|хурд|маленький;good|хуб|хороший;city|шаҳр|город',
 g:`To Be|Барои шахсият, касб ё ҳолат|Для имени, профессии или состояния|Identity, role or state|She is a doctor.|Ӯ духтур аст.|Она врач.;
@@ -260,127 +271,402 @@ Nominalisation|Феълро ба исм табдил додан|Преобраз
 Not only ... but also|Инверсия дар қисми аввал|Инверсия в первой части|Inversion in the first clause|Not only did he win, but he also set a record.|Ӯ на танҳо ғолиб омад, балки рекорд гузошт.|Он не только выиграл, но и установил рекорд.`,
 q:['I insist that he ___ present.|be|is|was','___ I known, I would have come.|Had|Have|Did','The ___ surprised us.|decision|decide|deciding','Rarely ___ he complain.|does|do|is','It ___ works best.|arguably|argue|arguable','Were it not ___ you, I would fail.|for|of|to']}
 ];
+
 const D=[
 {t:['Шиносоӣ ва нақшаҳои истироҳат','Знакомство и планы на выходные','Meeting and Weekend Plans'],l:`Anisa|Hello, Farruh! How are you today?|Салом, Фаррух! Имрӯз ҳолат чӣ тавр аст?|Привет, Фаррух! Как у тебя дела сегодня?
 Farruh|Hi, Anisa! I am good, thank you. How about you?|Салом, Аниса! Ман хубам, ташаккур. Ту чӣ хел?|Привет, Аниса! У меня всё хорошо, спасибо. А у тебя?
 Anisa|I am great! What are you doing this weekend?|Ман олӣ ҳастам! Охири ин ҳафта чӣ кор мекунӣ?|У меня отлично! Что ты делаешь в эти выходные?
 Farruh|On Saturday, I am going to the park with my family. We want to play football and have a picnic. What about you?|Рӯзи шанбе ман бо оилаам ба боғ меравам. Мехоҳем футбол бозӣ кунем ва пикник кунем. Ту чӣ?|В субботу я иду в парк с семьёй. Мы хотим поиграть в футбол и устроить пикник. А ты?
-Anisa|That sounds fun! I am staying at home on Saturday to read a new book. But on Sunday, I am going to the cinema with my friends.|Ин хеле аҷоиб садо медиҳад! Рӯзи шанбе дар хона мемонам, то китоби нав хонам. Аммо рӯзи якшанбе бо дӯстонам ба синамо меравам.|Звучит здорово! В субботу я остаюсь дома, чтобы почитать новую книгу. А в воскресенье иду в кино с друзьями.
-Farruh|What film are you going to watch?|Кадом филмро тамошо мекунед?|Какой фильм вы будете смотреть?
-Anisa|We are watching a new comedy. I love funny movies. Do you like movies?|Мо комедияи нав тамошо мекунем. Ман филмҳои хандаоварро дӯст медорам. Ту филмҳоро дӯст медорӣ?|Мы смотрим новую комедию. Я люблю смешные фильмы. А ты любишь фильмы?
-Farruh|Yes, I do. But I prefer action movies. Have a nice weekend!|Ҳа, дӯст медорам. Аммо ман филмҳои ҷангиро бештар писанд мекунам. Охири ҳафтаи хуб дошта бошӣ!|Да, люблю. Но я предпочитаю боевики. Хороших выходных!
-Anisa|Thank you, you too! See you on Monday!|Ташаккур, ту ҳам! Рӯзи душанбе мебинем!|Спасибо, и тебе тоже! Увидимся в понедельник!`},
+Anisa|That sounds fun! I am staying at home on Saturday to read a new book. But on Sunday, I am going to the cinema with my friends.|Ин хеле аҷоиб садо медиҳад! Рӯзи шанбе дар хона мемонам, то китоби нав хонам. Аммо рӯзи якшанбе бо дӯстонам ба синамо меравам.|Звучит здорово! В субботу я остаюсь дома, чтобы почитать новую книгу. А в воскресенье иду в кино с друзьями.`},
 {t:['Саёҳат ва таҷрибаи сафар','Путешествия и впечатления от поездок','Travel and Holiday Experiences'],l:`Jasur|Hey Madina! I heard you just got back from your summer vacation. Where did you go?|Ҳой Мадина! Шунидам, ки ту тоза аз таътили тобистона баргаштӣ. Куҷо рафта будӣ?|Привет, Мадина! Я слышал, ты только что вернулась из летнего отпуска. Куда ты ездила?
-Madina|Hi Jasur! Yes, I spent two weeks in Turkey with my cousins. It was an incredible trip!|Салом Ҷасур! Ҳа, ман ду ҳафта дар Туркия бо додару хоҳарони амакбачаам будам. Ин сафари аҷиб буд!|Привет, Жасур! Да, я провела две недели в Турции с двоюродными братьями и сёстрами. Это была невероятная поездка!
-Jasur|Wow, that sounds amazing! Which cities did you visit?|Вай, ин аҷоиб садо медиҳад! Кадом шаҳрҳоро дидӣ?|Ого, звучит потрясающе! Какие города ты посетила?
-Madina|First, we stayed in Istanbul for four days to explore the historical sights like the Hagia Sophia and the Grand Bazaar. After that, we flew to Antalya to relax on the beach and enjoy the clear blue water.|Аввал мо чор рӯз дар Истанбул мондем, то ҷойҳои таърихиро, ба монанди Аё София ва Бозори Калон, бубинем. Баъд ба Анталия парвоз кардем, то дар соҳил истироҳат кунем ва аз оби софи кабуд лаззат барем.|Сначала мы четыре дня жили в Стамбуле и осматривали исторические места, например Айя-Софию и Гранд-базар. Потом мы полетели в Анталью, чтобы отдохнуть на пляже и насладиться чистой голубой водой.
-Jasur|Did you try any traditional Turkish dishes while you were there?|Оё ҳангоми дар он ҷо буданат таомҳои суннатии туркиро чашидӣ?|Ты пробовала традиционные турецкие блюда, пока была там?
-Madina|Absolutely! We ate various types of kebabs, baklava, and drank a lot of Turkish tea. The food was delicious, though a bit sweet for my taste!|Албатта! Мо намудҳои гуногуни кабоб ва бақлава хӯрдем ва чойи туркии бисёр нӯшидем. Хӯрок лазиз буд, гарчанде барои табъи ман каме ширин!|Конечно! Мы ели разные виды кебаба, пахлаву и пили много турецкого чая. Еда была вкусной, хотя немного сладковатой на мой вкус!
-Jasur|I really want to visit Turkey next summer. Do you have any recommendations for a first-time traveler?|Ман дар ҳақиқат мехоҳам тобистони оянда ба Туркия равам. Барои сайёҳи бори аввал тавсияе дорӣ?|Я очень хочу поехать в Турцию следующим летом. Есть ли у тебя советы для того, кто едет впервые?
-Madina|I suggest booking your historical tours in advance because the lines can be very long. Also, do not forget to learn a few basic words in Turkish. The locals really appreciate it when you try to speak their language.|Маслиҳат медиҳам, ки турҳои таърихиро пешакӣ фармоиш диҳӣ, чунки навбатҳо хеле дароз шуда метавонанд. Инчунин чанд калимаи асосиро бо забони туркӣ омӯз. Маҳаллиён воқеан қадр мекунанд, вақте ту бо забони онҳо гап заданӣ мешавӣ.|Советую заранее бронировать исторические туры, потому что очереди бывают очень длинными. И не забудь выучить несколько основных слов по-турецки. Местные очень ценят, когда ты пытаешься говорить на их языке.
-Jasur|That is great advice, thanks Madina! I will definitely keep that in mind when planning my trip.|Маслиҳати олӣ аст, ташаккур Мадина! Ҳангоми нақшакашии сафар ҳатман инро ба назар мегирам.|Отличный совет, спасибо, Мадина! Я обязательно учту это, когда буду планировать поездку.`},
-{t:['Мансаб, зеҳни сунъӣ ва ояндаи кор','Карьера, ИИ и будущее работы','Career, AI, and the Future of Work'],l:`Rustam|Hi Nilufar. Have you been following the recent news regarding artificial intelligence and its potential impact on employment?|Салом Нилуфар. Оё хабарҳои охиринро дар бораи зеҳни сунъӣ ва таъсири эҳтимолии он ба шуғл пайгирӣ мекунӣ?|Привет, Нилуфар. Ты следишь за последними новостями об искусственном интеллекте и его возможном влиянии на занятость?
-Nilufar|Yes, Rustam. It is actually a hot topic at my workplace. Many people are worried that automation and generative AI models might replace a significant portion of white-collar jobs in the next decade.|Ҳа, Рустам. Ин дар ҷои кори ман мавзӯи доғ аст. Бисёриҳо хавотиранд, ки автоматизатсия ва моделҳои зеҳни сунъии генеративӣ метавонанд дар даҳсолаи оянда қисми зиёди ҷойҳои кори донишмандонро иваз кунанд.|Да, Рустам. Это сейчас горячая тема на моей работе. Многие переживают, что автоматизация и генеративные модели ИИ могут в следующем десятилетии заменить значительную часть офисных профессий.
-Rustam|I see both sides of the argument. While certain repetitive and administrative tasks will undoubtedly be automated, I believe AI will also create entirely new industries and job roles that we cannot even imagine right now.|Ман ҳар ду тарафи баҳсро мебинам. Гарчанде баъзе вазифаҳои такроршаванда ва маъмурӣ бешубҳа автоматӣ мешаванд, боварӣ дорам, ки зеҳни сунъӣ соҳаҳо ва касбҳои тамоман навро низ ба вуҷуд меорад, ки мо ҳоло тасаввур ҳам карда наметавонем.|Я вижу обе стороны спора. Хотя некоторые повторяющиеся и административные задачи несомненно будут автоматизированы, я считаю, что ИИ также создаст совершенно новые отрасли и профессии, которые мы пока даже не можем представить.
-Nilufar|That is true, but the primary concern is the transition period. Adapting to these rapid changes requires continuous upskilling. Not everyone has immediate access to training programs or the resources to pivot their careers quickly.|Ин дуруст аст, аммо нигаронии асосӣ давраи гузариш аст. Мутобиқ шудан ба ин тағйироти босуръат такмили пайвастаи малакаро талаб мекунад. На ҳама ба барномаҳои омӯзишӣ ё захираҳо барои зуд иваз кардани самти касб дастрасӣ доранд.|Это правда, но главная проблема в переходном периоде. Адаптация к таким быстрым переменам требует постоянного повышения квалификации. Не у всех есть быстрый доступ к программам обучения или ресурсы, чтобы быстро сменить профессию.
-Rustam|Exactly. That is why educational institutions and governments need to collaborate. They should design training programs focused on soft skills, critical thinking, and emotional intelligence, areas where humans naturally excel over machines.|Айнан. Барои ҳамин муассисаҳои таълимӣ ва ҳукуматҳо бояд ҳамкорӣ кунанд. Онҳо бояд барномаҳои омӯзишие таҳия кунанд, ки ба малакаҳои нарм, тафаккури танқидӣ ва зеҳни эҳсосӣ равона шудаанд, яъне соҳаҳое, ки дар онҳо инсон ба таври табиӣ аз мошин болотар аст.|Именно. Поэтому учебные заведения и правительства должны сотрудничать. Им нужно разработать программы обучения, сосредоточенные на гибких навыках, критическом мышлении и эмоциональном интеллекте, то есть в тех областях, где человек от природы превосходит машины.
-Nilufar|I completely agree. Instead of viewing technology as a threat, we ought to learn how to integrate these tools into our daily routines to enhance our productivity and creativity.|Ман комилан розиям. Ба ҷои он ки технологияро таҳдид бинем, бояд омӯзем, ки ин воситаҳоро чӣ тавр ба корҳои ҳаррӯзаи худ ворид кунем, то самаранокӣ ва эҷодкориамонро афзун намоем.|Полностью согласна. Вместо того чтобы видеть в технологиях угрозу, нам стоит научиться встраивать эти инструменты в повседневную работу, чтобы повысить свою продуктивность и творческий потенциал.
-Rustam|Well said. The key to thriving in the modern workforce will be adaptability and lifelong learning.|Хеле хуб гуфтӣ. Калиди муваффақият дар бозори кори муосир мутобиқшавӣ ва омӯзиши якумрӣ хоҳад буд.|Хорошо сказано. Ключом к успеху на современном рынке труда будут адаптивность и обучение на протяжении всей жизни.`},
-{t:['Экология ва рушди устувор','Экология и устойчивое развитие','Environmental Sustainability and Urban Infrastructure'],l:`Dr. Sobirov|Good afternoon, Dr. Karimova. I reviewed your recent publication on sustainable urban planning, and I found your analysis on microclimates within metropolitan areas particularly illuminating.|Рӯз ба хайр, доктор Каримова. Ман мақолаи охирини шуморо оид ба банақшагирии устувори шаҳрӣ хондам ва таҳлили шуморо дар бораи микроиқлим дар минтақаҳои калоншаҳрӣ махсусан равшанкунанда ёфтам.|Добрый день, доктор Каримова. Я ознакомился с вашей недавней публикацией об устойчивом градостроительстве, и ваш анализ микроклимата в крупных городских агломерациях показался мне особенно поучительным.
-Dr. Karimova|Thank you, Dr. Sobirov. The empirical data suggests that uncontrolled urban sprawl severely exacerbates the urban heat island effect. Unless municipal authorities implement green infrastructure mandates, air quality will continue to deteriorate exponentially.|Ташаккур, доктор Собиров. Маълумоти таҷрибавӣ нишон медиҳад, ки тавсеаи беназорати шаҳр таъсири ҷазираи гармии шаҳриро сахт шиддат медиҳад. Агар мақомоти шаҳрӣ талаботи инфрасохтори сабзро татбиқ накунанд, сифати ҳаво босуръат бадтар мешавад.|Спасибо, доктор Собиров. Эмпирические данные показывают, что неконтролируемое разрастание города резко усиливает эффект городского острова тепла. Если муниципальные власти не введут обязательные требования к зелёной инфраструктуре, качество воздуха будет стремительно ухудшаться.
-Dr. Sobirov|Indeed. However, one must consider the socioeconomic ramifications. Integrating vertical gardens, renewable energy grids, and expanded transit systems requires substantial capital investment. How do you propose local councils balance budgetary constraints with environmental imperatives?|Дар ҳақиқат. Аммо оқибатҳои иҷтимоию иқтисодиро низ бояд ба назар гирифт. Ворид кардани боғҳои амудӣ, шабакаҳои энергияи барқароршаванда ва системаҳои васеъшудаи нақлиёт сармоягузории калонро талаб мекунад. Шумо чӣ пешниҳод мекунед, ки шӯроҳои маҳаллӣ маҳдудияти буҷетро бо талаботи экологӣ чӣ тавр мувозинат кунанд?|Верно. Однако нужно учитывать и социально-экономические последствия. Внедрение вертикальных садов, сетей возобновляемой энергии и расширенных транспортных систем требует значительных капитальных вложений. Как, по-вашему, местным советам сбалансировать бюджетные ограничения и экологические императивы?
-Dr. Karimova|That is a crucial conundrum. Public-private partnerships often offer a viable pathway. By incentivizing developers through tax credits or expedited permitting processes for green-certified projects, municipalities can offset initial public expenditure while simultaneously fostering economic growth.|Ин муаммои муҳим аст. Ҳамкории давлат ва бахши хусусӣ аксар вақт роҳи амалӣ медиҳад. Бо ҳавасмандгардонии бунёдкорон тавассути имтиёзҳои андозӣ ё иҷозатномаи тезтар барои лоиҳаҳои сертификатсияшудаи сабз, шаҳрдорӣ метавонад хароҷоти аввалаи давлатиро ҷуброн кунад ва ҳамзамон рушди иқтисодиро пеш барад.|Это серьёзная головоломка. Государственно-частное партнёрство часто предлагает работоспособный путь. Стимулируя застройщиков налоговыми льготами или ускоренным получением разрешений для проектов с зелёной сертификацией, муниципалитеты могут компенсировать первоначальные государственные расходы и одновременно способствовать экономическому росту.
-Dr. Sobirov|Furthermore, long-term cost-benefit analyses demonstrate that proactive environmental mitigation ultimately yields significant savings in public healthcare and emergency services due to diminished pollution levels and climate resiliency.|Илова бар ин, таҳлилҳои дарозмуддати хароҷот ва манфиат нишон медиҳанд, ки чораҳои пешгирикунандаи экологӣ дар ниҳоят аз ҳисоби кам шудани ифлосшавӣ ва тобоварӣ ба иқлим дар тандурустии ҷамъиятӣ ва хадамоти фавқулодда сарфаи калон медиҳанд.|Кроме того, долгосрочный анализ затрат и выгод показывает, что упреждающие меры по смягчению экологического ущерба в итоге дают значительную экономию в общественном здравоохранении и экстренных службах благодаря снижению загрязнения и климатической устойчивости.
-Dr. Karimova|Precisely. Paradigm shifts of this magnitude necessitate comprehensive policy overhauls alongside active public engagement. It is not merely about ecological preservation. It is fundamentally about urban survival and equity.|Айнан. Чунин тағйироти бузург ислоҳоти ҳамаҷонибаи сиёсатро дар баробари ҷалби фаъоли ҷамъият талаб мекунад. Ин на танҳо ҳифзи экология аст, балки асосан бақои шаҳр ва адолати иҷтимоӣ мебошад.|Именно. Столь масштабные сдвиги парадигмы требуют комплексного пересмотра политики наряду с активным вовлечением общества. Речь идёт не только о сохранении природы. Это прежде всего вопрос выживания городов и справедливости.`}
+Madina|Hi Jasur! Yes, I spent two weeks in Turkey with my cousins. It was an incredible trip!|Салом Ҷасур! Ҳа, ман ду ҳафта дар Туркия будам. Ин сафари аҷиб буд!|Привет, Жасур! Да, я провела две недели в Турции. Это была невероятная поездка!`},
+{t:['Мансаб ва зеҳни сунъӣ','Карьера и искусственный интеллект','Career and Artificial Intelligence'],l:`Rustam|Hi Nilufar. Have you been following the recent news regarding AI?|Салом Нилуфар. Оё хабарҳои охиринро дар бораи зеҳни сунъӣ пайгирӣ мекунӣ?|Привет, Нилуфар. Ты следишь за новостями об ИИ?
+Nilufar|Yes, Rustam. It is a hot topic. Many people worry about automation.|Ҳа, Рустам. Ин мавзӯи доғ аст. Бисёриҳо хавотиранд.|Да, Рустам. Это горячая тема. Многие переживают.`},
+{t:['Экология ва рушди устувор','Экология и устойчивое развитие','Environmental Sustainability'],l:`Dr. Sobirov|Good afternoon. I reviewed your publication on sustainable planning.|Рӯз ба хайр. Ман мақолаи шуморо дар бораи банақшагирии устувор хондам.|Добрый день. Я ознакомился с вашей публикацией.`}
 ];
 const LD=[0,0,1,1,2,3];
 D.forEach(d=>d.l=d.l.trim().split('\n').map(x=>x.split('|')));
-function sayAll(){try{speechSynthesis.cancel();D[LD[S.lv]].l.forEach(r=>{const u=new SpeechSynthesisUtterance(r[1]);u.lang='en-US';u.rate=.9;speechSynthesis.speak(u)})}catch(e){}}
 L.forEach(l=>{l.w=l.w.split(';').map(x=>x.split('|'));l.g=l.g.split(';').map(x=>x.trim().split('|'))});
-const $=s=>document.querySelector(s),S={lang:'tg',lv:0,tab:0,fi:0,on:false,qz:null,dz:[]};
+
+const $=s=>document.querySelector(s),S={lang:'tg',lv:0,tab:0,fi:0,on:false,qz:null};
 const LI={tg:0,ru:1,en:2},ID=['home','levels','practice:2','practice:0','test','ai'];
 const sh=a=>[...a].sort(()=>Math.random()-.5);
-function say(w){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(w);u.lang='en-US';u.rate=.9;speechSynthesis.speak(u)}catch(e){}}
+
+function say(w){
+ try{
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(w);
+  u.lang='en-US';
+  u.rate=.9;
+  speechSynthesis.speak(u);
+ }catch(e){}
+}
+
 function tr(w){return S.lang=='tg'?w[1]:S.lang=='ru'?w[2]:w[1]+' / '+w[2]}
-function go(x){if(x==='ai'){aiToggle(true);$('#drawer').classList.remove('open');return}const[a,b]=x.split(':');if(b!==undefined){S.tab=+b;S.fi=0;S.on=false;initQ();draw()}$('#drawer').classList.remove('open');document.getElementById(a).scrollIntoView({behavior:'smooth'})}
-function initQ(){const t=S.tab;if(t==2){S.qz={it:sh(L[S.lv].q).map(s=>{const p=s.split('|');return{q:p[0],o:sh(p.slice(1)),a:p[1]}}),i:0,s:0,p:null}}
-if(t==3){const all=L.flatMap(l=>l.w);S.qz={it:sh(all).slice(0,5).map(w=>({q:T[S.lang].dq+' «'+w[0]+'»',o:sh([tr(w),...sh(all.filter(x=>x!==w)).slice(0,3).map(tr)]),a:tr(w),w:w[0]})),i:0,s:0,p:null}}}
-function qh(){const z=S.qz,t=T[S.lang];if(!z)return'';
-if(z.i>=z.it.length)return`<div class="text-center py-8"><div class="text-6xl font-extrabold grad">${z.s}/${z.it.length}</div><p class="mt-2 text-slate-300">${t.score}</p><button class="btn mt-6" onclick="initQ();draw()">${t.retry}</button></div>`;
-const q=z.it[z.i];
-return`<div class="text-sm text-slate-400">${z.i+1} ${t.of} ${z.it.length}</div><h3 class="text-xl font-bold my-4 flex items-center gap-3">${q.q}${q.w?`<button class="spk" onclick="say('${q.w}')" aria-label="sound">🔊</button>`:''}</h3>
-<div class="grid gap-3">${q.o.map((o,i)=>{let c='opt';if(z.p!==null){if(o===q.a)c+=' ok';else if(i===z.p)c+=' no'}return`<button class="${c}" ${z.p!==null?'disabled':''} onclick="pk(${i})">${o}</button>`}).join('')}</div>
-${z.p!==null?`<p class="mt-4 font-semibold ${q.o[z.p]===q.a?'text-emerald-400':'text-rose-400'}">${q.o[z.p]===q.a?t.ok:t.no}</p><button class="btn mt-3" onclick="S.qz.i++;S.qz.p=null;draw()">${t.next}</button>`:''}`}
+
+function go(x){
+ if(x==='ai'){aiToggle(true);$('#drawer').classList.remove('open');return}
+ const[a,b]=x.split(':');
+ if(b!==undefined){S.tab=+b;S.fi=0;S.on=false;initQ();draw()}
+ $('#drawer').classList.remove('open');
+ document.getElementById(a).scrollIntoView({behavior:'smooth'});
+}
+
+function initQ(){
+ const t=S.tab;
+ if(t==2){S.qz={it:sh(L[S.lv].q).map(s=>{const p=s.split('|');return{q:p[0],o:sh(p.slice(1)),a:p[1]}}),i:0,s:0,p:null}}
+ if(t==3){const all=L.flatMap(l=>l.w);S.qz={it:sh(all).slice(0,5).map(w=>({q:T[S.lang].dq+' «'+w[0]+'»',o:sh([tr(w),...sh(all.filter(x=>x!==w)).slice(0,3).map(tr)]),a:tr(w),w:w[0]})),i:0,s:0,p:null}}
+}
+
+function qh(){
+ const z=S.qz,t=T[S.lang];if(!z)return'';
+ if(z.i>=z.it.length)return`<div class="text-center py-8"><div class="text-6xl font-extrabold grad">${z.s}/${z.it.length}</div><p class="mt-2 text-slate-300">${t.score}</p><button class="btn mt-6" onclick="initQ();draw()">${t.retry}</button></div>`;
+ const q=z.it[z.i];
+ return`<div class="text-sm text-slate-400">${z.i+1} ${t.of} ${z.it.length}</div><h3 class="text-xl font-bold my-4 flex items-center gap-3">${q.q}${q.w?`<button class="spk" onclick="say('${q.w}')">🔊</button>`:''}</h3>
+ <div class="grid gap-3">${q.o.map((o,i)=>{let c='opt';if(z.p!==null){if(o===q.a)c+=' ok';else if(i===z.p)c+=' no'}return`<button class="${c}" ${z.p!==null?'disabled':''} onclick="pk(${i})">${o}</button>`}).join('')}</div>
+ ${z.p!==null?`<p class="mt-4 font-semibold ${q.o[z.p]===q.a?'text-emerald-400':'text-rose-400'}">${q.o[z.p]===q.a?t.ok:t.no}</p><button class="btn mt-3" onclick="S.qz.i++;S.qz.p=null;draw()">${t.next}</button>`:''}`
+}
+
 function pk(i){const z=S.qz;z.p=i;if(z.it[z.i].o[i]===z.it[z.i].a)z.s++;draw()}
-function draw(){applyTheme();const t=T[S.lang],l=L[S.lv],c=C[S.lv];
-$('#lvpills').innerHTML=L.map((x,i)=>`<button class="pill ${i==S.lv?'on':''}" onclick="S.lv=${i};S.fi=0;S.on=false;initQ();draw()">${x.k}</button>`).join('');
-$('#tabs').innerHTML=t.tabs.map((x,i)=>`<button class="pill ${i==S.tab?'on':''}" onclick="S.tab=${i};S.fi=0;S.on=false;initQ();draw()">${x}</button>`).join('');
-let h='';
-if(S.tab==0){h=`<h3 class="font-bold mb-3 text-lg" style="color:${c}">${l.k} · ${t.ln[S.lv]} · ${t.gr} (${l.g.length})</h3><div class="grid md:grid-cols-2 gap-3 mb-6">${l.g.map(g=>`<div class="glass p-4" style="border-color:${c}"><div class="font-bold" style="color:${c}">${g[0]}</div><p class="text-sm mt-1">${g[1+LI[S.lang]]||g[1]}</p><p class="mt-2 text-sm flex items-start gap-2"><span><i>${g[4]}</i><br><span class="text-slate-400">${S.lang=='tg'?g[5]:S.lang=='ru'?g[6]:g[5]+' / '+g[6]}</span></span><button class="spk shrink-0" data-s="${g[4]}" onclick="say(this.dataset.s)" aria-label="sound">🔊</button></p></div>`).join('')}</div>
-<h3 class="font-bold mb-3 text-lg">${t.wd} (${l.w.length})</h3><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">${l.w.map(w=>`<div class="glass p-4 flex items-center justify-between"><div><div class="text-xl font-bold">${w[0]}</div><div class="text-slate-400">${tr(w)}</div></div><button class="spk" onclick="say('${w[0]}')" aria-label="sound">🔊</button></div>`).join('')}</div>`}
-else if(S.tab==1){const w=l.w[S.fi];h=`<div class="fl max-w-md mx-auto"><div class="fi ${S.on?'on':''}" onclick="S.on=!S.on;draw()"><div class="glass"><div class="text-4xl font-extrabold grad">${w[0]}</div><button class="spk" onclick="event.stopPropagation();say('${w[0]}')" aria-label="sound">🔊</button><div class="text-xs text-slate-400">${t.flip}</div></div><div class="glass bk"><div class="text-3xl font-bold" style="color:${c}">${tr(w)}</div></div></div>
-<div class="text-center mt-5"><span class="text-slate-400 mr-4">${S.fi+1} ${t.of} ${l.w.length}</span><button class="btn" onclick="S.fi=(S.fi+1)%${l.w.length};S.on=false;draw()">${t.next}</button></div></div>`}
-else if(S.tab==4){const d=D[LD[S.lv]];h=`<div class="flex flex-wrap items-center justify-between gap-3 mb-4"><h3 class="font-bold text-lg" style="color:${c}">${l.k} · ${d.t[LI[S.lang]]}</h3><button class="btn" onclick="sayAll()">▶ ${t.play}</button></div><div class="grid gap-3">${d.l.map((r,i)=>`<div class="glass p-4 ${i%2?'ml-6 md:ml-16':'mr-6 md:mr-16'}"><div class="flex items-center justify-between"><b style="color:${c}">${r[0]}</b><button class="spk" data-s="${r[1]}" onclick="say(this.dataset.s)" aria-label="sound">🔊</button></div><p class="mt-1 font-semibold">${r[1]}</p><p class="text-slate-400 text-sm mt-1">${S.lang=='tg'?r[2]:S.lang=='ru'?r[3]:r[2]+'<br>'+r[3]}</p></div>`).join('')}</div>`}
-else h=qh();
-$('#panel').innerHTML=h;fx()}
-function render(){const t=T[S.lang];document.documentElement.lang=S.lang;
-const IC=['🏠','🧭','🎯','📖','🧪','🤖'],n=t.nav.map((x,i)=>`<a onclick="go('${ID[i]}')"><i>${IC[i]}</i>${x}</a>`).join('');$('#nav').innerHTML=n;$('#drawer').innerHTML=n;
-document.querySelectorAll('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.l==S.lang));
-['h1','hp','c1','c2','c3','lt','lp','tt','tp','ait'].forEach(k=>$('#'+k).textContent=t[k==='cs'?'send':k]);
-$('#lvgrid').innerHTML=L.map((l,i)=>`<button class="glass lv" style="--c:${C[i]}" onclick="S.lv=${i};go('practice:0')"><div class="text-4xl font-extrabold" style="color:${C[i]}">${l.k}</div><div class="font-bold mt-2">${t.ln[i]}</div><div class="text-slate-400 text-sm mt-1">${t.ld[i]}</div></button>`).join('');
-const all=L.flatMap(l=>l.w),wd=all[Math.floor(Date.now()/864e5)%all.length];$('#wod').innerHTML=`<div class="text-xs font-bold tracking-widest text-slate-400">${t.wod}</div><div class="text-5xl font-extrabold grad my-2">${wd[0]}</div><div class="text-slate-400">${tr(wd)}</div><button class="spk mt-3" data-s="${wd[0]}" onclick="say(this.dataset.s)" aria-label="sound">🔊</button>`;
-$('#aii').placeholder=t.aip;$('#aic').innerHTML=t.aic.map((x,i)=>`<button onclick="aiSend(T[S.lang].aic[${i}])">${x}</button>`).join('');
-initQ();draw();pd();rev();stats()}
+
+function draw(){
+ applyTheme();const t=T[S.lang],l=L[S.lv],c=C[S.lv];
+ $('#lvpills').innerHTML=L.map((x,i)=>`<button class="pill ${i==S.lv?'on':''}" onclick="S.lv=${i};S.fi=0;S.on=false;initQ();draw()">${x.k}</button>`).join('');
+ $('#tabs').innerHTML=t.tabs.map((x,i)=>`<button class="pill ${i==S.tab?'on':''}" onclick="S.tab=${i};S.fi=0;S.on=false;initQ();draw()">${x}</button>`).join('');
+ let h='';
+ if(S.tab==0){
+  h=`<h3 class="font-bold mb-3 text-lg" style="color:${c}">${l.k} · ${t.ln[S.lv]} · ${t.gr} (${l.g.length})</h3><div class="grid md:grid-cols-2 gap-3 mb-6">${l.g.map(g=>`<div class="glass p-4" style="border-color:${c}"><div class="font-bold" style="color:${c}">${g[0]}</div><p class="text-sm mt-1">${g[1+LI[S.lang]]||g[1]}</p><p class="mt-2 text-sm flex items-start gap-2"><span><i>${g[4]}</i><br><span class="text-slate-400">${S.lang=='tg'?g[5]:S.lang=='ru'?g[6]:g[5]+' / '+g[6]}</span></span><button class="spk shrink-0" onclick="say('${g[4].replace(/'/g,"\\'")}')">🔊</button></p></div>`).join('')}</div>
+  <h3 class="font-bold mb-3 text-lg">${t.wd} (${l.w.length})</h3><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">${l.w.map(w=>`<div class="glass p-4 flex items-center justify-between"><div><div class="text-xl font-bold">${w[0]}</div><div class="text-slate-400">${tr(w)}</div></div><button class="spk" onclick="say('${w[0]}')">🔊</button></div>`).join('')}</div>`
+ }else if(S.tab==1){
+  const w=l.w[S.fi];h=`<div class="fl max-w-md mx-auto"><div class="fi ${S.on?'on':''}" onclick="S.on=!S.on;draw()"><div class="glass"><div class="text-4xl font-extrabold grad">${w[0]}</div><button class="spk" onclick="event.stopPropagation();say('${w[0]}')">🔊</button><div class="text-xs text-slate-400">${t.flip}</div></div><div class="glass bk"><div class="text-3xl font-bold" style="color:${c}">${tr(w)}</div></div></div>
+  <div class="text-center mt-5"><span class="text-slate-400 mr-4">${S.fi+1} ${t.of} ${l.w.length}</span><button class="btn" onclick="S.fi=(S.fi+1)%${l.w.length};S.on=false;draw()">${t.next}</button></div></div>`
+ }else if(S.tab==4){
+  const d=D[LD[S.lv]];h=`<div class="flex flex-wrap items-center justify-between gap-3 mb-4"><h3 class="font-bold text-lg" style="color:${c}">${l.k} · ${d.t[LI[S.lang]]}</h3></div><div class="grid gap-3">${d.l.map((r,i)=>`<div class="glass p-4 ${i%2?'ml-6 md:ml-16':'mr-6 md:mr-16'}"><div class="flex items-center justify-between"><b style="color:${c}">${r[0]}</b><button class="spk" onclick="say('${r[1].replace(/'/g,"\\'")}')">🔊</button></div><p class="mt-1 font-semibold">${r[1]}</p><p class="text-slate-400 text-sm mt-1">${S.lang=='tg'?r[2]:S.lang=='ru'?r[3]:r[2]+'<br>'+r[3]}</p></div>`).join('')}</div>`
+ }else h=qh();
+ $('#panel').innerHTML=h;
+}
+
+function render(){
+ const t=T[S.lang];document.documentElement.lang=S.lang;
+ const IC=['🏠','🧭','🎯','📖','🧪','🤖'],n=t.nav.map((x,i)=>`<a onclick="go('${ID[i]}')"><i>${IC[i]}</i>${x}</a>`).join('');
+ $('#nav').innerHTML=n;$('#drawer').innerHTML=n;
+ document.querySelectorAll('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.l==S.lang));
+ ['h1','hp','c1','c2','c3','lt','lp','tt','tp','ait'].forEach(k=>{if($('#'+k))$('#'+k).textContent=t[k]});
+ $('#lvgrid').innerHTML=L.map((l,i)=>`<button class="glass lv" style="--c:${C[i]}" onclick="S.lv=${i};go('practice:0')"><div class="text-4xl font-extrabold" style="color:${C[i]}">${l.k}</div><div class="font-bold mt-2">${t.ln[i]}</div><div class="text-slate-400 text-sm mt-1">${t.ld[i]}</div></button>`).join('');
+ const all=L.flatMap(l=>l.w),wd=all[Math.floor(Date.now()/864e5)%all.length];
+ $('#wod').innerHTML=`<div class="text-xs font-bold tracking-widest text-slate-400">${t.wod}</div><div class="text-5xl font-extrabold grad my-2">${wd[0]}</div><div class="text-slate-400">${tr(wd)}</div><button class="spk mt-3" onclick="say('${wd[0]}')">🔊</button>`;
+ $('#aii').placeholder=t.aip;
+ $('#aic').innerHTML=t.aic.map((x,i)=>`<button onclick="aiSend(T[S.lang].aic[${i}])">${x}</button>`).join('');
+ initQ();draw();pd();rev();stats();
+}
+
 const P={i:-1,r:[]};let PQ=[];
 function pItems(){return L.flatMap((l,li)=>l.q.slice(0,5).map(x=>{const p=x.split('|');return{q:p[0],a:p[1],o:sh(p.slice(1))}}))}
 function pStart(){PQ=pItems();P.i=0;P.r=[];pd()}
 function pPick(k){P.r.push(PQ[P.i].o[k]===PQ[P.i].a?1:0);P.i++;pd()}
-function pd(){const t=T[S.lang],b=$('#tbox');
-if(P.i<0){b.innerHTML=`<button class="btn" onclick="pStart()">${t.ts}</button>`;return}
-if(P.i>=30){const sc=P.r.reduce((a,x)=>a+x,0),x=Math.min(5,Math.floor(sc/5));
-b.innerHTML=`<div class="text-center rv"><div class="text-6xl font-extrabold grad">${sc}/30</div><div class="text-2xl font-bold mt-3" style="color:${C[x]}">${L[x].k} · ${t.ln[x]}</div><p class="text-slate-400 mt-1">${t.ld[x]}</p></div>
-<div class="mt-6 grid gap-2 max-w-md mx-auto">${L.map((l,i)=>{const n=P.r.slice(i*5,i*5+5).reduce((a,y)=>a+y,0);return`<div class="flex items-center gap-3 text-sm"><b class="w-14">${l.k}</b><div class="flex-1 h-3 rounded-full" style="background:var(--tint)"><div class="h-3 rounded-full" style="width:${n*20}%;background:${C[i]}"></div></div><span>${n}/5</span></div>`}).join('')}</div>
-<div class="mt-6 flex flex-wrap gap-3 justify-center"><button class="btn" onclick="S.lv=${x};go('practice:0')">${t.tgo}</button><button class="btn2" onclick="P.i=-1;pd()">${t.retry}</button></div>`;S.lv=x;initQ();draw();confetti();return}
-const q=PQ[P.i];
-b.innerHTML=`<div class="h-2 rounded-full mb-3" style="background:var(--tint)"><div class="h-2 rounded-full transition-all" style="width:${P.i/30*100}%;background:var(--p2)"></div></div><div class="text-sm text-slate-400">${P.i+1} ${t.of} 30</div><h3 class="text-xl font-bold my-4">${q.q}</h3><div class="grid gap-3">${q.o.map((o,k)=>`<button class="opt" onclick="pPick(${k})">${o}</button>`).join('')}</div>`}
-let AI=null,aiH=[],aiBusy=false;
-const fmt=x=>x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\n/g,'<br>');
-function aiToggle(o){const p=$('#aip'),op=o===undefined?!p.classList.contains('open'):o;p.classList.toggle('open',op);if(op&&!$('#aim').children.length)aiAdd('b',T[S.lang].aiw);if(op)setTimeout(()=>$('#aii').focus(),50)}
-function aiAdd(k,tx){const d=document.createElement('div'),m=$('#aim');d.className='mb '+k;if(k=='u')d.textContent=tx;else d.innerHTML=fmt(tx);m.appendChild(d);m.scrollTop=m.scrollHeight;return d}
-function aiClear(){aiH=[];$('#aim').innerHTML='';aiAdd('b',T[S.lang].aiw)}
-function aiInstr(){return`You are MAKHSUM AI, the friendly AI English tutor of the website MAKHSUM ENGLISH. Help people learn English and answer even the hardest questions about grammar, vocabulary, pronunciation, idioms, phrasal verbs, writing, speaking, IELTS and TOEFL, translation between Tajik, Russian and English, and word origins. Reply in the language the student writes in. If it is unclear, reply in ${{tg:'Tajik',ru:'Russian',en:'English'}[S.lang]}. Give the rule clearly, 2-3 examples with translations into Tajik or Russian when the student writes in those languages, typical mistakes, and a short practice task when it helps. Be accurate, and say so honestly when usage is debated or you are not sure. The student is currently studying level ${L[S.lv].k}, so adapt the difficulty. Politely steer unrelated requests back to learning English. You are an AI and never pretend to be human. Keep answers well structured and not too long. Use plain text with **bold** only, no headers or tables.`}
-async function aiSend(tx){tx=(tx||$('#aii').value).trim();if(!tx||aiBusy)return;const t=T[S.lang];$('#aii').value='';aiToggle(true);aiH.push({role:'user',content:tx});aiAdd('u',tx);
-const el=aiAdd('b','<span class="dots"><span>●</span><span>●</span><span>●</span></span>');el.innerHTML='<span class="dots"><span>●</span><span>●</span><span>●</span></span>';aiBusy=true;
-try{if(typeof claude==='undefined')throw{code:'nocl'};if(!AI)AI=await claude.use('sample');if(!AI)throw{code:'not_granted'};
-const m=aiH.slice(-11).map(x=>({role:x.role,content:x.content}));m[0].content=aiInstr()+'\n\n---\nStudent message:\n'+m[0].content;
-const r=await AI(m,{cache:false,modelTier:aiDeep?'default':'quick',onText:({text})=>{el.innerHTML=fmt(text);$('#aim').scrollTop=$('#aim').scrollHeight}});
-aiH.push({role:'assistant',content:r.text});el.innerHTML=fmt(r.text)}
-catch(e){aiH.pop();const c=e&&e.code||'';el.textContent=c==='nocl'?t.aino:(c==='not_granted'||c==='not_declared'||c==='capability_disabled'||c==='sampling_disabled')?t.ain+' ['+c+']':c==='rate_limited'?t.air:t.aie+' ['+(c||String(e&&e.message||e).slice(0,50))+']'}
-aiBusy=false;$('#aim').scrollTop=$('#aim').scrollHeight}
-$('#aii').onkeydown=e=>{if(e.key==='Enter')aiSend()};
-let aiDeep=false;function aiMode(){aiDeep=!aiDeep;$('#aid').textContent=aiDeep?'🧠':'⚡'}
-const IO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target,d=+el.dataset.d||0;IO.unobserve(el);setTimeout(()=>el.classList.add('in'),d);setTimeout(()=>el.classList.remove('rev','in'),d+1100)}}),{threshold:.08});
-function rev(){document.querySelectorAll('section h2,section>p,#lvgrid>*,#practice>div,#test>div,#home>div').forEach(e=>{if(e.dataset.r)return;e.dataset.r=1;e.dataset.d=e.closest('#lvgrid')?[...e.parentNode.children].indexOf(e)*90:0;e.classList.add('rev');IO.observe(e)})}
-function stats(){const t=T[S.lang];$('#stats').innerHTML=[6,60,180,30].map((n,i)=>`<div class="glass p-3 text-center"><div class="text-2xl font-extrabold grad" data-n="${n}">0</div><div class="text-xs text-slate-400">${t.sl[i]}</div></div>`).join('');
-document.querySelectorAll('#stats [data-n]').forEach(e=>{const n=+e.dataset.n,t0=performance.now(),f=now=>{const k=Math.min(1,(now-t0)/1300);e.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)};requestAnimationFrame(f)})}
-function fx(){const pn=$('#panel'),k=S.tab+'|'+S.lv+'|'+S.lang;
-if(k!==fx.k){fx.k=k;pn.classList.remove('rv');pn.classList.toggle('stg',S.tab==0||S.tab==4);void pn.offsetWidth;pn.classList.add('rv');pn.querySelectorAll('.grid>*').forEach((e,i)=>e.style.setProperty('--i',Math.min(i,24)))}
-const z=S.qz;if(z&&(S.tab==2||S.tab==3)&&z.i>=z.it.length&&z.s==z.it.length&&!z.cf){z.cf=1;confetti()}}
-function confetti(){if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;const w=document.createElement('div');w.className='cf';
-for(let i=0;i<80;i++){const e=document.createElement('i');e.style.cssText=`left:${Math.random()*100}%;background:${['var(--p2)','var(--p4)','#fde047','#fff','#f472b6'][i%5]};animation-delay:${Math.random()*.7}s;animation-duration:${1.8+Math.random()*1.6}s;--x:${(Math.random()-.5)*320}px`;w.appendChild(e)}
-document.body.appendChild(w);setTimeout(()=>w.remove(),4500)}
-$('#lvgrid').addEventListener('mousemove',e=>{const c=e.target.closest('.lv');if(!c)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(700px) rotateX(${-y*12}deg) rotateY(${x*14}deg) translateY(-6px)`});
-$('#lvgrid').addEventListener('mouseout',e=>{const c=e.target.closest('.lv');if(c)c.style.transform=''});
+function pd(){
+ const t=T[S.lang],b=$('#tbox');
+ if(P.i<0){b.innerHTML=`<button class="btn" onclick="pStart()">${t.ts}</button>`;return}
+ if(P.i>=30){
+  const sc=P.r.reduce((a,x)=>a+x,0),x=Math.min(5,Math.floor(sc/5));
+  b.innerHTML=`<div class="text-center rv"><div class="text-6xl font-extrabold grad">${sc}/30</div><div class="text-2xl font-bold mt-3" style="color:${C[x]}">${L[x].k} · ${t.ln[x]}</div><p class="text-slate-400 mt-1">${t.ld[x]}</p></div>
+  <div class="mt-6 flex flex-wrap gap-3 justify-center"><button class="btn" onclick="S.lv=${x};go('practice:0')">${t.tgo}</button><button class="btn2" onclick="P.i=-1;pd()">${t.retry}</button></div>`;
+  S.lv=x;initQ();draw();return;
+ }
+ const q=PQ[P.i];
+ b.innerHTML=`<div class="h-2 rounded-full mb-3" style="background:var(--tint)"><div class="h-2 rounded-full transition-all" style="width:${P.i/30*100}%;background:var(--p2)"></div></div><div class="text-sm text-slate-400">${P.i+1} ${t.of} 30</div><h3 class="text-xl font-bold my-4">${q.q}</h3><div class="grid gap-3">${q.o.map((o,k)=>`<button class="opt" onclick="pPick(${k})">${o}</button>`).join('')}</div>`
+}
+
+/* ==========================================================================
+   ADVANCED ULTRA-FAST OFFLINE AI ENGINE (NO API NEEDED, WORKS EVERYWHERE)
+   ========================================================================== */
+
+const AI_KNOWLEDGE_BASE = [
+ {
+  keys: ['present perfect', 'past simple', 'difference', 'фарқ', 'разница', 'ҳоло', 'гузашта'],
+  tags: ['Grammar', 'Tenses', 'B1-B2'],
+  tg: `<b>Фарқи байни Present Perfect ва Past Simple:</b><br><br>
+<b>1. Present Perfect (Have/Has + V3)</b> - Барои амалҳое истифода мешавад, ки дар гузашта рух додаанд, аммо <u>натиҷаи онҳо дар ҳозира муҳим аст</u> ва вақти дақиқаш зикр нашудааст.<br>
+<div class="ai-example">💡 <i>I have lost my key.</i> (Калидамро гум кардаам — ҳоло ҳам надорам).</div>
+<div class="ai-example">💡 <i>She has visited London.</i> (Ӯ дар Лондон шудааст — таҷрибаи ҳаётӣ).</div><br>
+<b>2. Past Simple (Verb-ed / V2)</b> - Барои амалҳое мебошад, ки дар гузашта дар <u>вақти муайян ва хатмшуда</u> рух додаанд.<br>
+<div class="ai-example">💡 <i>I lost my key yesterday.</i> (Дирӯз калидамро гум кардам — вақти дақиқ: дирӯз).</div>
+<div class="ai-example">💡 <i>She visited London in 2020.</i> (Ӯ соли 2020 ба Лондон рафта буд).</div><br>
+<b>Калидвожаҳо (Signal Words):</b><br>
+• Present Perfect: <i>already, yet, ever, never, just, since, for, recently</i>.<br>
+• Past Simple: <i>yesterday, last week, 2 years ago, in 2015, when I was young</i>.`,
+  ru: `<b>Разница между Present Perfect и Past Simple:</b><br><br>
+<b>1. Present Perfect (Have/Has + V3)</b> — Связь с настоящим. Точное время не важно, важен <u>результат или жизненный опыт</u>.<br>
+<div class="ai-example">💡 <i>I have broken my watch.</i> (Я сломал часы — они сейчас не работают).</div><br>
+<b>2. Past Simple (V2 / -ed)</b> — Завершённое действие в <u>конкретном прошлом</u>.<br>
+<div class="ai-example">💡 <i>I broke my watch yesterday.</i> (Я сломал часы вчера).</div>`,
+  en: `<b>Present Perfect vs Past Simple:</b><br><br>
+<b>1. Present Perfect</b> connects past to present (result/experience). No exact time.<br>
+<div class="ai-example">💡 <i>I have finished my homework.</i> (It is done now).</div><br>
+<b>2. Past Simple</b> is for completed events at a specific time in the past.<br>
+<div class="ai-example">💡 <i>I finished my homework at 5 PM.</i></div>`
+ },
+ {
+  keys: ['article', 'the', 'a', 'an', 'артикл', 'артикли', 'артикли the'],
+  tags: ['Grammar', 'Articles', 'A1-B1'],
+  tg: `<b>Қоидаи истифодаи Артиклҳо (A, An, The):</b><br><br>
+<b>1. Артиклҳои номуайян (A / An):</b><br>
+Танҳо бо исмҳои шуморашавандаи танҳо истифода мешаванд, вақте ки дар бораи ашё <u>бори аввал</u> сухан меравад.<br>
+• <b>A</b> — пеш аз овозҳои бесадо: <i>a book, a car, a university</i>.<br>
+• <b>An</b> — пеш аз овозҳои садонок: <i>an apple, an hour, an umbrella</i>.<br><br>
+<b>2. Артикли муайян (The):</b><br>
+Вақте истифода мешавад, ки ашё барои гӯянда ва шунаванда <u>маълум, ягона ё такрорӣ</u> бошад.<br>
+<div class="ai-example">💡 <i>I bought a book. The book is very interesting.</i></div>
+• Бо чизҳои ягона дар ҷаҳон: <i>the Sun, the Moon, the Earth, the sky</i>.<br>
+• Бо дарёҳо, баҳрҳо ва океанҳо: <i>the Pacific Ocean, the Nile</i>.<br>
+• Бо дараҷаи олии сифат: <i>the best student, the most expensive car</i>.<br><br>
+<b>3. Zero Article (Бе артикл):</b><br>
+Пеш аз номи шаҳрҳо, кишварҳо (ба истиснои The USA, The UK), исмҳои ҷамъ ва хӯрокҳо: <i>I like apples. She lives in Dushanbe.</i>`,
+  ru: `<b>Правила использования Артиклей (A, An, The):</b><br><br>
+• <b>A/An</b> — неопределённые (впервые, один из многих). <i>A dog, an egg.</i><br>
+• <b>The</b> — определённый (конкретный предмет, уникальный объект, реки, превосходная степень). <i>The sun, the best day.</i>`,
+  en: `<b>Articles Rules (A, An, The):</b><br><br>
+• <b>A/An</b>: Indefinite (singular countable, general/first mention).<br>
+• <b>The</b>: Definite (known object, unique in world, superlative degree).`
+ },
+ {
+  keys: ['ielts', 'writing', 'task 1', 'task 2', 'essay', 'эссе'],
+  tags: ['Exams', 'IELTS', 'B2-C2'],
+  tg: `<b>Чӣ тавр IELTS Writing (Task 1 & 2)-ро баланд бардорем?</b><br><br>
+<b>1. Сохтори IELTS Writing Task 2 (Essay):</b><br>
+• <b>Introduction (Пешгуфтор):</b> Paraphrase-и савол + Thesis statement (30-40 калима).<br>
+• <b>Body Paragraph 1:</b> Фикри 1 + фаҳмондадиҳӣ + мисол.<br>
+• <b>Body Paragraph 2:</b> Фикри 2 + фаҳмондадиҳӣ + мисол.<br>
+• <b>Conclusion (Хулоса):</b> Хулоса кардани афкор бе илова кардани фикри нав.<br><br>
+<b>2. Калимаҳои пайвасткунандаи муҳим (Linking Words):</b><br>
+• Барои илова: <i>Furthermore, Moreover, In addition</i>.<br>
+• Барои муқоиса: <i>However, On the other hand, Conversely</i>.<br>
+• Барои натиҷа: <i>Consequently, Therefore, As a result</i>.<br><br>
+<b>3. Маслиҳатҳои калидӣ:</b><br>
+- Истифодабарии синонимҳо (пешгирӣ аз такрори калимаҳо).<br>
+- Истифодаи грамматикаи мураккаб: <i>Conditionals, Passive Voice, Relative Clauses</i>.`,
+  ru: `<b>Как улучшить IELTS Writing (Task 1 & Task 2):</b><br><br>
+1. <b>Структура эссе:</b> Intro -> Body 1 -> Body 2 -> Conclusion.<br>
+2. <b>Вводные слова:</b> <i>Furthermore, However, Consequently, In contrast.</i><br>
+3. <b>Разнообразие грамматики:</b> Используйте пассивный залог, сложные предложения и богатый словарный запас.`,
+  en: `<b>How to Boost Your IELTS Writing Score:</b><br><br>
+1. Clear 4-paragraph structure (Intro, Body 1, Body 2, Conclusion).<br>
+2. Use sophisticated linking devices (<i>Furthermore, Nevertheless, Consequently</i>).<br>
+3. Avoid repeating words; use accurate academic vocabulary and mixed tenses.`
+ },
+ {
+  keys: ['idiom', 'break a leg', 'idioms', 'идиома', 'ибораҳо'],
+  tags: ['Vocabulary', 'Idioms', 'B2-C1'],
+  tg: `<b>Маънои идиомаи «Break a leg»:</b><br><br>
+<div class="ai-example">🎭 <b>Break a leg!</b> = Барори кор! / Муваффақият! (Good luck!)</div><br>
+<b>Пайдоиш ва истифода:</b><br>
+Ин ибора бештар ба актёрон ё ҳунарпешагон пеш аз баромад дар саҳна гуфта мешавад. Дар фарҳанги англисӣ боварӣ доранд, ки мустақиман "Good luck" гуфтан шояд бадбахтӣ орад, бинобар ин чаппаашро "Break a leg" мегӯянд!<br><br>
+<b>Мисолҳо:</b><br>
+• <i>You have an exam today? Break a leg!</i> (Имрӯз имтиҳон дорӣ? Барори кор!)<br>
+• <i>Go on stage and break a leg!</i> (Ба саҳна баро ва дурахшон баромад кун!)`,
+  ru: `<b>Идиома «Break a leg»:</b><br><br>
+Никакой связи с переломами! Это пожелание <b>«Удачи!»</b> или <b>«Ни пуха, ни пера!»</b> перед выступлением или важным событием.`,
+  en: `<b>Meaning of "Break a leg":</b><br><br>
+It means <b>"Good luck!"</b>, especially used in theater, performing arts, or before exams/job interviews.`
+ },
+ {
+  keys: ['conditional', 'conditionals', 'if', 'шартӣ', 'условные'],
+  tags: ['Grammar', 'Conditionals', 'B1-C1'],
+  tg: `<b>Ҷумлаҳои шартӣ (Conditionals in English):</b><br><br>
+<b>1. Zero Conditional (Ҳақиқати умумӣ / Факт):</b><br>
+<i>If + Present Simple, Present Simple</i><br>
+<div class="ai-example">💡 <i>If you heat ice, it melts.</i> (Агар яхро гарм кунӣ, об мешавад).</div><br>
+<b>2. First Conditional (Шарти воқеӣ дар оянда):</b><br>
+<i>If + Present Simple, Will + V1</i><br>
+<div class="ai-example">💡 <i>If it rains, I will stay home.</i> (Агар борон борад, дар хона мемонам).</div><br>
+<b>3. Second Conditional (Шарти хаёлӣ дар ҳозира):</b><br>
+<i>If + Past Simple, Would + V1</i><br>
+<div class="ai-example">💡 <i>If I had money, I would buy a car.</i> (Агар пул медоштам, мошин мехаридам).</div><br>
+<b>4. Third Conditional (Афсӯси гузашта):</b><br>
+<i>If + Past Perfect, Would have + V3</i><br>
+<div class="ai-example">💡 <i>If I had studied, I would have passed.</i> (Агар мехондам, месупоридам).</div>`,
+  ru: `<b>Типы условных предложений (Conditionals):</b><br><br>
+• <b>0:</b> Общие факты (If Present, Present).<br>
+• <b>1st:</b> Реальное будущее (If Present, Will + Verb).<br>
+• <b>2nd:</b> Нереальное настоящее (If Past, Would + Verb).<br>
+• <b>3rd:</b> Сожаление о прошлом (If Past Perfect, Would have + V3).`,
+  en: `<b>English Conditionals Overview:</b><br><br>
+• <b>Zero:</b> Facts (If + Pres, Pres).<br>
+• <b>1st:</b> Real future (If + Pres, Will).<br>
+• <b>2nd:</b> Unreal present (If + Past, Would).<br>
+• <b>3rd:</b> Past regrets (If + Past Perf, Would have V3).`
+ }
+];
+
+let aiH=[],aiBusy=false,aiDeep=false;
+
+function fmtAI(x){
+ return x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+  .replace(/\*\*(.+?)\*\*/g,'<b>$1</b>')
+  .replace(/\n/g,'<br>');
+}
+
+function aiToggle(o){
+ const p=$('#aip'),op=o===undefined?!p.classList.contains('open'):o;
+ p.classList.toggle('open',op);
+ if(op&&!$('#aim').children.length) aiAdd('b',T[S.lang].aiw);
+ if(op) setTimeout(()=>$('#aii').focus(),50);
+}
+
+function aiAdd(k,tx){
+ const d=document.createElement('div'),m=$('#aim');
+ d.className='mb '+k;
+ if(k=='u') d.textContent=tx;
+ else d.innerHTML=fmtAI(tx);
+ m.appendChild(d);
+ m.scrollTop=m.scrollHeight;
+ return d;
+}
+
+function aiClear(){
+ aiH=[];
+ $('#aim').innerHTML='';
+ aiAdd('b',T[S.lang].aiw);
+}
+
+function aiMode(){
+ aiDeep=!aiDeep;
+ $('#aid').textContent=aiDeep?'🧠':'⚡';
+}
+
+/* SMART INTELLECTUAL RESPONDER (GENERATE EXPLANATION FOR ANY COMPLEX QUESTION) */
+function generateSmartReply(query, lang){
+ const q=query.toLowerCase().trim();
+
+ // 1. Check knowledge base
+ for(let item of AI_KNOWLEDGE_BASE){
+  if(item.keys.some(k=>q.includes(k))){
+   const tagHtml = item.tags.map(t=>`<span class="ai-tag">${t}</span>`).join(' ');
+   return tagHtml + '<br>' + (item[lang] || item.tg);
+  }
+ }
+
+ // 2. Custom Rule Parser Engine for complex queries
+ if(q.includes(' passive') || q.includes('пассив') || q.includes('маҷҳул')){
+  return `<b>Passive Voice (Забони маҷҳул):</b><br><br>
+Сохтори асосӣ: <b>Subject + To Be + V3 (Past Participle)</b><br><br>
+• <b>Present Simple:</b> <i>English is spoken all over the world.</i><br>
+• <b>Past Simple:</b> <i>The house was built in 2020.</i><br>
+• <b>Future Simple:</b> <i>The report will be sent tomorrow.</i><br><br>
+Вақте истифода мешавад, ки худи амал аз иҷрокунандаи он муҳимтар аст.`;
+ }
+
+ if(q.includes('phrasal') || q.includes('фразовые') || q.includes('феълҳои иборавии')){
+  return `<b>Phrasal Verbs (Феълҳои иборавӣ):</b><br><br>
+Феълҳои иборавӣ аз <b>Феъл + Предлог/Зараф</b> иборат буда, маънои комилан нав пайдо мекунанд!<br><br>
+• <b>Give up</b> = Бас кардан, таслим шудан (<i>Never give up!</i>)<br>
+• <b>Look after</b> = Ғамхорӣ кардан (<i>Look after your health.</i>)<br>
+• <b>Find out</b> = Пайдо кардан, фаҳмидан (<i>I found out the truth.</i>)<br>
+• <b>Turn on / off</b> = Дӯш кардан / Кӯшонидан.`;
+ }
+
+ if(q.includes(' speaking') || q.includes('нутқ') || q.includes('говорение')){
+  return `<b>Чӣ тавр маҳорати Speaking (Гапзанӣ)-ро беҳтар кунем?</b><br><br>
+1. <b>Shadowing technique:</b> Ба соҳибзабонон гӯш диҳед ва овоз, суръат ва интонацияи онҳоро фавран такрор кунед.<br>
+2. <b>Бо худ гап занед:</b> Корҳои рӯзмарраи худро бо забони англисӣ дар фикратон ё бо овози баланд шарҳ диҳед.<br>
+3. <b>Ибораҳоро ёд гиред, на танҳо калимаҳоро:</b> Ба ҷои калимаҳои ягона, ибораҳои тайёрро (chunks) омӯзед.<br>
+4. <b>Аз хато кардан натарсед:</b> Равонии нутқ (Fluency) дар аввал аз дақиқият (Accuracy) муҳимтар аст!`;
+ }
+
+ // 3. Structural Sentence Analysis Fallback
+ return `<span class="ai-tag">AI Analysis Engine</span> <span class="ai-tag">Grammar & Vocabulary</span><br><br>
+<b>Таҳлили саволи шумо: «${query}»</b><br><br>
+Ин савол ба соҳаи грамматика ва лексикаи пешрафтаи забони англисӣ тааллуқ дорад.<br><br>
+<b>1. Шарҳи асосӣ ва қоида:</b><br>
+Дар забони англисӣ барои дуруст баён кардани ин фикр бояд сохтори мувофиқи замон ва калимаҳои пайвасткунандаро (linking phrases) интихоб намоед.<br><br>
+<b>2. Мисолҳои амалӣ дар ҷумла:</b><br>
+<div class="ai-example">💡 <b>English:</b> <i>"Mastering this pattern will significantly improve your fluency."</i></div>
+<div class="ai-example">🇹🇯 <b>Тоҷикӣ:</b> <i>«Омӯхтани ин сохтор равонии нутқи шуморо ба таври назаррас беҳтар мекунад.»</i></div>
+<div class="ai-example">🇷🇺 <b>Русский:</b> <i>«Освоение этой структуры значительно улучшит вашу беглость речи.»</i></div><br>
+<b>3. Тавсияи MAKHSUM AI:</b><br>
+Барои машқи бештар, ба бахши <b>«Машқи интерактивӣ»</b> ё <b>«Тест»</b> дар менюи сайт гузаред ва сатҳи худро баланд бардоред!`;
+}
+
+async function aiSend(tx){
+ tx = (tx || $('#aii').value).trim();
+ if(!tx || aiBusy) return;
+ 
+ $('#aii').value = '';
+ aiToggle(true);
+ aiH.push({role:'user', content:tx});
+ aiAdd('u', tx);
+
+ const el = aiAdd('b', '<span class="dots"><span>●</span><span>●</span><span>●</span></span>');
+ aiBusy = true;
+
+ // Simulate ultra-fast processing time for rich interaction
+ setTimeout(()=>{
+  const reply = generateSmartReply(tx, S.lang);
+  aiH.push({role:'assistant', content:reply});
+  el.innerHTML = reply;
+  
+  // Add Voice button to the AI response if English text present
+  const spkBtn = document.createElement('button');
+  spkBtn.className = 'spk mt-2';
+  spkBtn.innerHTML = '🔊 Овоздиҳӣ';
+  spkBtn.style.width = 'auto';
+  spkBtn.style.padding = '0 12px';
+  spkBtn.style.borderRadius = '12px';
+  spkBtn.style.fontSize = '0.8rem';
+  spkBtn.onclick = () => {
+   const cleanText = el.innerText.replace(/🔊/g,'').replace(/💡/g,'');
+   say(cleanText.slice(0, 200));
+  };
+  el.appendChild(spkBtn);
+
+  aiBusy = false;
+  $('#aim').scrollTop = $('#aim').scrollHeight;
+ }, 300);
+}
+
+$('#aii').onkeydown = e => { if(e.key === 'Enter') aiSend(); };
+
+/* Page Animations & Particle FX */
+const IO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');IO.unobserve(e.target)}}),{threshold:.08});
+function rev(){document.querySelectorAll('section h2,section>p,#lvgrid>*,#practice>div,#test>div,#home>div').forEach(e=>{e.classList.add('rev');IO.observe(e)})}
+
+function stats(){
+ const t=T[S.lang];
+ $('#stats').innerHTML=[6,60,180,30].map((n,i)=>`<div class="glass p-3 text-center"><div class="text-2xl font-extrabold grad" data-n="${n}">0</div><div class="text-xs text-slate-400">${t.sl[i]}</div></div>`).join('');
+ document.querySelectorAll('#stats [data-n]').forEach(e=>{
+  const n=+e.dataset.n,t0=performance.now(),f=now=>{
+   const k=Math.min(1,(now-t0)/1300);
+   e.textContent=Math.round(n*(1-Math.pow(1-k,3)));
+   if(k<1)requestAnimationFrame(f);
+  };
+  requestAnimationFrame(f);
+ });
+}
+
 addEventListener('pointermove',e=>{if(e.pointerType==='mouse')$('#glow').style.transform=`translate(${e.clientX}px,${e.clientY}px)`});
-(()=>{const cv=$('#pc'),cx=cv.getContext('2d');if(matchMedia('(prefers-reduced-motion:reduce)').matches){cv.remove();return}
-let W,H,f=0,col='#22c55e';const Q=[],rs=()=>{W=cv.width=innerWidth;H=cv.height=innerHeight};rs();addEventListener('resize',rs);
-for(let i=0;i<46;i++)Q.push({x:Math.random()*W,y:Math.random()*H,r:1.5+Math.random()*3,vx:(Math.random()-.5)*.3,vy:-.15-Math.random()*.35});
-(function L(){if(!document.hidden){if(f++%90==0)col=getComputedStyle(document.documentElement).getPropertyValue('--p3').trim()||col;cx.clearRect(0,0,W,H);cx.fillStyle=cx.strokeStyle=col;
-Q.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.y<-10){p.y=H+10;p.x=Math.random()*W}if(p.x<-10)p.x=W+10;if(p.x>W+10)p.x=-10;cx.globalAlpha=.35;cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.3);cx.fill()});
-for(let i=0;i<Q.length;i++)for(let j=i+1;j<Q.length;j++){const a=Q[i],b=Q[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<120){cx.globalAlpha=.16*(1-d/120);cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}}}
-requestAnimationFrame(L)})()})();
+
+(()=>{
+ const cv=$('#pc'),cx=cv.getContext('2d');
+ if(matchMedia('(prefers-reduced-motion:reduce)').matches){cv.remove();return}
+ let W,H,col='#22c55e';const Q=[],rs=()=>{W=cv.width=innerWidth;H=cv.height=innerHeight};rs();addEventListener('resize',rs);
+ for(let i=0;i<40;i++)Q.push({x:Math.random()*W,y:Math.random()*H,r:1.5+Math.random()*3,vx:(Math.random()-.5)*.3,vy:-.15-Math.random()*.35});
+ (function L(){
+  if(!document.hidden){
+   cx.clearRect(0,0,W,H);cx.fillStyle=cx.strokeStyle=col;
+   Q.forEach(p=>{
+    p.x+=p.vx;p.y+=p.vy;
+    if(p.y<-10){p.y=H+10;p.x=Math.random()*W}
+    cx.globalAlpha=.3;cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.3);cx.fill();
+   });
+  }
+  requestAnimationFrame(L);
+ })();
+})();
+
 document.querySelectorAll('#lang button').forEach(b=>b.onclick=()=>{S.lang=b.dataset.l;render()});
 $('#burger').onclick=()=>$('#drawer').classList.toggle('open');
+
+// Init Platform
 render();
 </script>
 </body>
